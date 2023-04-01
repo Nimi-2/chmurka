@@ -3,7 +3,7 @@ const os = require('os');
 const app = express();
 require('dotenv').config();
 
-const port = 8097;
+const port = 8103;
 const VERSION=process.env.VERSION || 'nothing';
 app.get('/', (req, res) => {
   const ipAddress = req.ip.replace('::ffff:','');
