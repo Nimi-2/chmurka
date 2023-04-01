@@ -13,3 +13,5 @@ Polecenia do sprawdzenia:
 docker logs z1 lub z2
 docker ps
 docker images
+Przegladarka:
+http://loclahost:8097 lub 8103
