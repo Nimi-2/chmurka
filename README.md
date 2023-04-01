@@ -1,2 +1,2 @@
-# chumrka
+# chmurka
 aplikacje chmurowe
