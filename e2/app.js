@@ -3,13 +3,13 @@ const os = require('os');
 const app = express();
 require('dotenv').config();
 
-const port = 8103;
-const VERSION=process.env.APP_VERSION || 'nothing';
+const port = 8097;
+const VERSION=process.env.VERSION || 'nothing';
 app.get('/', (req, res) => {
   const ipAddress = req.ip.replace('::ffff:','');
   res.send(`Adres IP serwera: ${ipAddress}<br>
             Nazwa serwera: ${os.hostname()}<br>
-            Wersja aplikacji: ${process.env.APP_VERSION}`);
+            Wersja aplikacji: ${process.env.VERSION}`);
 });
 
 app.listen(port, () => {
